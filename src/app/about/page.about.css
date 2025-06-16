@@ -1,0 +1,196 @@
+.pageContent {
+  width: 100%;
+  min-height: 100vh;
+  padding: 6em 2em;
+  background: url("./bg.jpg") no-repeat 50% 50%;
+  color: #fff;
+  background-size: cover;
+}
+
+
+.contentSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4em;
+}
+
+.textContent {
+  flex: 1;
+  padding: 2em;
+}
+
+.textContent h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.textContent p {
+  font-size: 1em;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.imageContent {
+  flex: 1;
+  padding: 2em;
+}
+
+.imageContent img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.skillsSection {
+  margin: 4em 0;
+  text-align: center;
+}
+
+.skillsSection h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillItem p {
+  flex: 0 0 150px;
+  text-align: left;
+  font-size: 1em;
+}
+
+.skillBar {
+  flex: 1;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  margin: 0 1em;
+  position: relative;
+}
+
+.skillProgress {
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.skillItem span {
+  flex: 0 0 50px;
+  text-align: right;
+  font-size: 1em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  border-top: 1px solid #333;
+  margin-top: 4em;
+}
+
+.footerLeft p {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.imageContent img{
+  height: 0;
+  width: 500px;
+  min-height: 50vh;
+}
+
+.footerRight {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8em; 
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+  justify-content: flex-end;
+}
+
+.socialIcons a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footerRight p {
+  font-size: 0.9em;
+  text-transform: none;
+  margin-top: 0.5em; /* ✅ Tambahkan sedikit jarak atas */
+}
+
+@media (max-width: 900px) {
+  .contentSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContent,
+  .imageContent {
+    padding: 1em;
+    width: 100%;
+  }
+
+  .textContent h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .skillItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skillItem p {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .skillBar {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .skillItem span {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerRight {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+}
